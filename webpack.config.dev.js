@@ -5,7 +5,7 @@ webpackConfig.devtool = 'eval';
 webpackConfig.output = {
     pathinfo: true,
     publicPath: '/',
-    filename: '[name].js'
+    filename: '[name].js',
 };
 
 module.exports = webpackConfig;

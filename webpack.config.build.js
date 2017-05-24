@@ -7,7 +7,7 @@ webpackConfig.devtool = 'cheap-module-source-map';
 
 webpackConfig.plugins.push(
     new webpack.optimize.CommonsChunkPlugin({
-        names: ['vendor', 'manifest']
+        names: ['vendor', 'manifest'],
     })
 );
 
@@ -17,7 +17,7 @@ webpackConfig.plugins.push(
 
 webpackConfig.output = {
     path: path.join(__dirname, 'dist'),
-    filename: '[name].[chunkhash].js'
+    filename: '[name].[chunkhash].js',
 };
 
 module.exports = webpackConfig;
